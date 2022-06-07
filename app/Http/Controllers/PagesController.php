@@ -12,7 +12,7 @@ class PagesController extends Controller
     }
     public function index(){
         $title='welcome to index page';
-        return view('pages.index');
+        // return view('pages.index');
         // return view('pages.index',compact('title'));
         return view('pages.index')->with('title',$title);
     }

@@ -22,14 +22,17 @@ Route::get('/about', 'App\Http\Controllers\PagesController@about');
 Route::get('/services', 'App\Http\Controllers\PagesController@services');
 
 
+Route::resource('/posts','App\Http\Controllers\PostsController');
 
+// Route::get('/posts','App\Http\Controllers\PostsController@index');
 
+// Route::get('/terms', 'App\Http\Controllers\PostsController@index')->name('terms');
 
 Route::get('/', function () {
     return view('welcome');
 });
 // Route::get('/', function () {
-//     return 'ruchi';
+//     return "ruchi";
 // });
 // Route::get('/about', function () {
 //     return view('pages.about');
